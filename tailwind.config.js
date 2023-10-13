@@ -7,10 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        padding: {
+          DEFAULT: '1rem',
+          lg: '30px',
+        },
+      },
+      colors: {
+       'c-dark': '#292830',
+       'c-light': '#BDBDBD',
+       'c-accent': '#FF7235',
+       'c-accentHover': '#e05216',
+       'c-grey': '#F5F5F5',
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        overview: "url('../public/images/overview/bg.svg')",
+        cta: "url('../public/images/cta/bg.svg')",
       },
     },
   },
